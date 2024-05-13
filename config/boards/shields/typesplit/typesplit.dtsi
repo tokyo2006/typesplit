@@ -92,3 +92,18 @@
         prechargep = <0x22>;
 	};
 };
+
+&uart0 {
+	status = "disabled";
+};
+&spi1 {
+	compatible = "nordic,nrf-spim";
+	status = "disabled"; // <<< disabled in main .dtsi, okay in .overlay
+	pd0: pd@0 {
+		compatible = "pixart,pmw3610";
+		status = "disabled";
+		label = "TRACKBALL0";
+		reg = <0>;
+		spi-max-frequency = <4000000>;
+	};
+};
