@@ -172,7 +172,6 @@
 
             label = "Flash";
         };
-    };
         Sniper {
             bindings = <
 &trans  &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
@@ -184,6 +183,7 @@
 
             label = "Sniper";
         };
+    };
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
